@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
+import 'screens/login_screen.dart';
 
-class App extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => AppState();
-}
-
-class AppState extends State<App> {
-  int counter = 1;
-
-  Widget build(context) {
-    return MaterialApp(
-      home: Scaffold(appBar: AppBar(title: Text('Images'))),
+class App extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      title: 'Form',
+      home: new Scaffold(
+        body: new LoginScreen(),
+      ),
     );
   }
 }
